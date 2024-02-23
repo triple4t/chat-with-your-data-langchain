@@ -11,7 +11,7 @@ os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 llm = OpenAI(temperature=0.7)
 
 
-pdf_file_path = "Harry Potter and the Sorcerers Stone.pdf"
+pdf_file_path = "Harry Potter and the Sorcerers Stone.pdf" # here goes your file path 
 pdf_loader = PyPDFLoader(pdf_file_path)
 
 docs = pdf_loader.load_and_split()
